@@ -1,4 +1,3 @@
-// Custom Scripts
 // Custom scripts
 function burgerMenu() {
     const burger = document.querySelector('.burger')
@@ -53,4 +52,3 @@ function bindModal(trigger, modal, close) {
 }
 
 bindModal('.info_btn', '.modal__wrapper', '.modal__close');
-

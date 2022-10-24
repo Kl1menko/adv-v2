@@ -1,0 +1,212 @@
+//HERO
+
+.hero_content {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: $breakpoint480) {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  &__title {
+    max-width: 65%;
+    @media (max-width: $breakpoint480) {
+      max-width: 100%;
+    }
+    h1 {
+      color: #1d2736;
+      font-size: 66px;
+      font-weight: 600;
+      padding-bottom: 20px;
+      @media (max-width: $breakpoint480) {
+        font-size: 48px;
+      }
+    }
+    h3 {
+      color: #677487;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 120%;
+      @media (max-width: $breakpoint480) {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .hero_btn {
+      display: block;
+      width: 50%;
+      margin-top: 40px;
+      background: #f0998d;
+      color: #ffffff;
+      box-shadow: 0px 16px 40px rgba(255, 188, 166, 0.33);
+      border-radius: 15px;
+      padding: 15px 40px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center;
+      @media (max-width: $breakpoint480) {
+        margin: 0 auto;
+        width: 100%;
+        padding: 12px 10px;
+      }
+      &:hover {
+        background-color: #fff0ec;
+        transition: background-color 0.3s ease;
+        color: #fd7461;
+      }
+    }
+  }
+
+  &__photo {
+    position: relative;
+    max-width: 30%;
+    @media (max-width: $breakpoint480) {
+      max-width: 100%;
+      margin-top: 30px;
+    }
+    .hero__photo {
+      border-radius: 5px;
+      max-width: 300px;
+      z-index: 12;
+      box-shadow: 11px 15px 43px -12px rgba(0, 0, 0, 0.64);
+      @media (max-width: $breakpoint480) {
+        max-width: 50%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    .ellipse_first {
+      z-index: -1;
+      position: absolute;
+      top: -15px;
+      right: -120px;
+      @media (max-width: $breakpoint480) {
+        max-width: 100px;
+        top: -15px;
+        right: 30px;
+      }
+    }
+    .ellipse_second {
+      z-index: -1;
+      position: absolute;
+      top: 176px;
+      right: -48px;
+      @media (max-width: $breakpoint480) {
+        max-width: 150px;
+        top: 70px;
+        right: 150px;
+      }
+    }
+  }
+}
+
+//ABOUT
+
+.about_content {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  @media (max-width: $breakpoint480) {
+    flex-direction: column-reverse;
+  }
+  img {
+    max-width: 510px;
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    @media (max-width: $breakpoint480) {
+      max-width: 90%;
+    }
+  }
+  .about_text {
+    @media (max-width: $breakpoint480) {
+      order: 1;
+    }
+    h2 {
+      margin-top: 30px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 80%;
+      color: #1d2736;
+      @media (max-width: $breakpoint480) {
+        margin-top: 15px;
+        font-size: 42px;
+      }
+    }
+    p {
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 180%;
+      color: #677487;
+      span {
+        font-weight: 600;
+      }
+      @media (max-width: $breakpoint480) {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+//WORK
+.work {
+  background-color: #f9f7fc;
+  .work_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 35px;
+    padding: 40px 40px;
+    border-radius: 12px;
+    h2 {
+      width: 50%;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 80%;
+      color: #1d2736;
+    }
+    h4 {
+      width: 50%;
+      font-size: 22px;
+      line-height: 80%;
+      line-height: 110%;
+      color: #677487;
+    }
+  }
+
+  .work_sections {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    .work_block {
+      max-width: 33.33%;
+      padding: 15px 25px;
+      box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      img {
+        width: 50px;
+        margin-bottom: 15px;
+      }
+      h4 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #1d2736;
+      }
+      h6 {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 110%;
+      }
+    }
+  }
+}
